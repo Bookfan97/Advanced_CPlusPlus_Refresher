@@ -6,7 +6,7 @@
 using namespace std;
 
 class Employee {
-private:
+protected:
     string name;
     double pay;
 public:
@@ -36,8 +36,13 @@ public:
     string toString()
     {
         stringstream stm;
+        string salary;
         stm << name << ":" << pay;
         return stm.str();
+    }
+    double grossPay(int hours)
+    {
+        return pay * hours;
     }
 };
 
@@ -55,20 +60,52 @@ public:
     {
         return salaried;
     }
+    double grossPay(int hours)
+    {
+        if (salaried)
+        {
+            return pay;
+        }
+        else
+        {
+            return pay * hours;
+        }
+    }
+    string toString()
+    {
+        stringstream stm;
+        string salary;
+        if (salaried)
+        {
+            salary = "Salaried";
+        }
+        else
+        {
+            salary = "Hourly";
+        }
+        stm << name << ": " << pay << " :" << salary << endl;
+        return stm.str();
+    }
 };
 
 int main()
 {
-    Employee emp1("Jane Smith", 25000);
-    Employee emp2("Bill Brown", 45000);
-    Manager emp3("Bob Brown", 1000000, true);
+    Employee emp1("Jane Smith", 15.00);
+    Employee emp2("Bill Brown", 45.00);
+    Manager emp3("Bob Brown", 1000000.00, true);
     cout << "Employee Name: "<<emp1.GetName() << endl;
-    cout << "Employee Pay: "<<emp1.GetPay() << endl;
+    cout << "Employee Pay: $"<<emp1.GetPay() << endl;
+    cout << "Employee Gross Pay: $" << emp1.grossPay(40) << endl;
+    cout << "--------------------------------------------"<< endl;
     cout << "Employee Name: "<<emp2.GetName() << endl;
     cout << "Employee Pay: "<<emp2.GetPay() << endl;
+    cout << "Employee Gross Pay: $" << emp2.grossPay(40) << endl;
+    cout << "--------------------------------------------" << endl;
     cout << "Employee Name: " << emp3.GetName() << endl;
     cout << "Employee Pay: " << emp3.GetPay() << endl;
     cout << "Salaried? " << emp3.getSalaried() << endl;
+    cout << "Employee Gross Pay: $" << emp3.grossPay(40) << endl;
+    cout << emp3.toString() << endl;
     return 0;
 }
 
