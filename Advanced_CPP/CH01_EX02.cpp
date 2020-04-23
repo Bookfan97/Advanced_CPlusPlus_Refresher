@@ -35,11 +35,11 @@ public:
 
 	}
 };
-int main()
-{
-	Trapezoid t1(3, 5, 5, 2);
-	Square  s1(6);
-	t1.display();
-	s1.display();
-	return 0;
-}
+//int main()
+//{
+//	Trapezoid t1(3, 5, 5, 2);
+//	Square  s1(6);
+//	t1.display();
+//	s1.display();
+//	return 0;
+//}
