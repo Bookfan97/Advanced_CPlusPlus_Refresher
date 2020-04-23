@@ -21,11 +21,11 @@
     <ClCompile Include="CH01_EX01.cpp">
       <Filter>Source Files\Chapter 01</Filter>
     </ClCompile>
-    <ClCompile Include="CH01.cpp">
-      <Filter>Source Files\Chapter 01</Filter>
-    </ClCompile>
     <ClCompile Include="CH01_EX02.cpp">
       <Filter>Source Files\Chapter 01</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
