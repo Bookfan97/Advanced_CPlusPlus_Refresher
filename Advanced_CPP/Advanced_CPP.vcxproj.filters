@@ -13,10 +13,16 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Chapter 01">
+      <UniqueIdentifier>{508eab1e-0061-41ab-9904-705e995fc0fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CH01_EX01.cpp">
+      <Filter>Source Files\Chapter 01</Filter>
+    </ClCompile>
     <ClCompile Include="CH01.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Chapter 01</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

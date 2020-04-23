@@ -31,7 +31,7 @@ public:
     }
     int getPay() 
     {
-        return pay;
+        return (double) pay;
     }
     void setPay(double payRate)
     {
@@ -93,24 +93,24 @@ public:
     }
 };
 
-int main()
-{
-    Employee emp1("Jane Smith", 15.00);
-    Employee emp2("Bill Brown", 45.00);
-    Manager emp3("Bob Brown", 1000000.00, true);
-    cout << "Employee Name: "<<emp1.getName() << endl;
-    cout << "Employee Pay: $"<<emp1.getPay() << endl;
-    cout << "Employee Gross Pay: $" << emp1.grossPay(40) << endl;
-    cout << "--------------------------------------------"<< endl;
-    cout << "Employee Name: "<<emp2.getName() << endl;
-    cout << "Employee Pay: "<<emp2.getPay() << endl;
-    cout << "Employee Gross Pay: $" << emp2.grossPay(40) << endl;
-    cout << "--------------------------------------------" << endl;
-    cout << "Employee Name: " << emp3.getName() << endl;
-    cout << "Employee Pay: " << emp3.getPay() << endl;
-    cout << "Salaried? " << emp3.getSalaried() << endl;
-    cout << "Employee Gross Pay: $" << emp3.grossPay(40) << endl;
-    cout << emp3.toString() << endl;
-    return 0;
-}
+//int main()
+//{
+//    Employee emp1("Jane Smith", 15.00);
+//    Employee emp2("Bill Brown", 45.00);
+//    Manager emp3("Bob Brown", 1000000.00, true);
+//    cout << "Employee Name: "<<emp1.getName() << endl;
+//    cout << "Employee Pay: $"<<emp1.getPay() << endl;
+//    cout << "Employee Gross Pay: $" << emp1.grossPay(40) << endl;
+//    cout << "--------------------------------------------"<< endl;
+//    cout << "Employee Name: "<<emp2.getName() << endl;
+//    cout << "Employee Pay: "<<emp2.getPay() << endl;
+//    cout << "Employee Gross Pay: $" << emp2.grossPay(40) << endl;
+//    cout << "--------------------------------------------" << endl;
+//    cout << "Employee Name: " << emp3.getName() << endl;
+//    cout << "Employee Pay: " << emp3.getPay() << endl;
+//    cout << "Salaried? " << emp3.getSalaried() << endl;
+//    cout << "Employee Gross Pay: $" << emp3.grossPay(40) << endl;
+//    cout << emp3.toString() << endl;
+//    return 0;
+//}
 
