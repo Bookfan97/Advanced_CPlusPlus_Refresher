@@ -56,12 +56,12 @@ public:
 		}
 	}
 };
-int main()
-{
-	CheckingAccount myAccount(500, 0.5);
-	myAccount.Credit(100);
-	cout << "Balance: $" << myAccount.getBalance() << endl;
-	myAccount.debit(50);
-	cout << "Balance: $" << myAccount.getBalance() << endl;
-	return 0;
-}
+//int main()
+//{
+//	CheckingAccount myAccount(500, 0.5);
+//	myAccount.Credit(100);
+//	cout << "Balance: $" << myAccount.getBalance() << endl;
+//	myAccount.debit(50);
+//	cout << "Balance: $" << myAccount.getBalance() << endl;
+//	return 0;
+//}

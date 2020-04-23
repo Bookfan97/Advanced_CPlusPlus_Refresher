@@ -24,5 +24,8 @@
     <ClCompile Include="CH01.cpp">
       <Filter>Source Files\Chapter 01</Filter>
     </ClCompile>
+    <ClCompile Include="CH01_EX02.cpp">
+      <Filter>Source Files\Chapter 01</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
