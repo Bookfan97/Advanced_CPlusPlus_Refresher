@@ -100,13 +100,25 @@ int main()
     Employee emp1("Jane Smith", 15.00);
     Employee emp2("Bill Brown", 45.00);
     Manager emp3("Bob Brown", 10000.00, true);
-    emps.push_back(emp1);
-    emps.push_back(emp2);
-    emps.push_back(emp3);
-    for (int i = 0; i < emps.size(); i++)
+    Employee *empPtr;
+    empPtr = &emp1;
+    //empPtr = &emp2;
+    //Manager *mngrPtr;
+    cout << "Name: " << empPtr->getName() << endl;
+    cout << "Pay: $" << empPtr->grossPay(40) << endl;
+    empPtr = &emp2;
+    cout << "Name: " << empPtr->getName() << endl;
+    cout << "Pay: $" << empPtr->grossPay(40) << endl;
+    empPtr = &emp3;
+    cout << "Name: " << empPtr->getName() << endl;
+    cout << "Pay: $" << empPtr->grossPay(40) << endl;
+    //emps.push_back(emp1);
+    //emps.push_back(emp2);
+    //emps.push_back(emp3);
+   /* for (int i = 0; i < emps.size(); i++)
     {
         cout << "Employee Gross Pay: $" << emps[i].grossPay(40) << endl;
-    }
+    }*/
 //    cout << "Employee Name: "<<emp1.getName() << endl;
 //    cout << "Employee Pay: $"<<emp1.getPay() << endl;
 //    cout << "Employee Gross Pay: $" << emp1.grossPay(40) << endl;
@@ -120,6 +132,6 @@ int main()
 //    cout << "Salaried? " << emp3.getSalaried() << endl;
 //    cout << "Employee Gross Pay: $" << emp3.grossPay(40) << endl;
 //    cout << emp3.toString() << endl;
-//    return 0;
+    return 0;
 }
 
